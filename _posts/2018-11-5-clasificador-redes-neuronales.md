@@ -12,7 +12,22 @@ para la clase de Redes Neuronales. Teníamos que usar [Tensorflow](https://www.t
 Terminé eligiendo [keras](https://keras.io/)
 
 
-![keras+tensorflow](/img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
+aaaa test
+
+![keras+tensorflow](img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
+
+1
+
+
+![keras+tensorflow](./img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
+
+2
+
+
+![keras+tensorflow](../img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
+
+3
+
 
 Al principio todo iba bien, cada quien eligió un tema y yo termine eligiendo el de clasificador de células blancas. 
 Mi plan original era hacer una red que le dieras una imagen con células blancas en ella y te dijera cuántas había y de qué tipo. 
