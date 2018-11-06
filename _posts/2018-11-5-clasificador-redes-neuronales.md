@@ -11,22 +11,7 @@ Todo empezó cuando el profesor [Waissman](https://github.com/juliowaissman) nos
 para la clase de Redes Neuronales. Teníamos que usar [Tensorflow](https://www.tensorflow.org/) o algo similar. 
 Terminé eligiendo [keras](https://keras.io/)
 
-
-aaaa test
-
-![keras+tensorflow](img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
-
-1
-
-
-![keras+tensorflow](./img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
-
-2
-
-
-![keras+tensorflow](../img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){:class="img-responsive"}
-
-3
+![keras+tensorflow](/img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){: class="img-responsive" .center-image}
 
 
 Al principio todo iba bien, cada quien eligió un tema y yo termine eligiendo el de clasificador de células blancas. 
@@ -78,7 +63,7 @@ intenté resolver el problema de 3 maneras diferentes:
     
     Y esta es la estructura de la red:
     
-    ![red-estructura](/img/posts/clasificador-redes-neuronales/model.png){:class="img-responsive"}
+    ![red-estructura](/img/posts/clasificador-redes-neuronales/model.png){: class="img-responsive" .center-image}
     
     
 ## Conclusión
