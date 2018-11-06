@@ -1,0 +1,19 @@
+title:             Fran's blog
+email:             franko1307@gmail.com
+description:       Blog about my life and what I do.
+author:            Francisco Cordova
+baseurl:           "/"
+url:               "http://franko1307.github.io"
+
+# Social Profiles
+twitter_username:  
+github_username:   franko1307
+facebook_username: 
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
