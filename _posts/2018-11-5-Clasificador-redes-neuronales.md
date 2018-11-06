@@ -11,7 +11,6 @@ Todo empezó cuando el profesor [Waissman](https://github.com/juliowaissman) nos
 para la clase de Redes Neuronales. Teníamos que usar [Tensorflow](https://www.tensorflow.org/) o algo similar. 
 Terminé eligiendo [keras](https://keras.io/)
 
-![keras+tensorflow](/img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){: class="img-responsive .center-image" }
 ![keras+tensorflow](/img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg){: class="img-responsive " .center-image }
 
 
@@ -64,7 +63,7 @@ intenté resolver el problema de 3 maneras diferentes:
     
     Y esta es la estructura de la red:
     
-    ![red-estructura](/img/posts/clasificador-redes-neuronales/model.png){: class="img-responsive center-block " }
+    ![red-estructura](/img/posts/clasificador-redes-neuronales/model.png){: class="img-responsive" .center-image  }
     
     
 ## Conclusión
