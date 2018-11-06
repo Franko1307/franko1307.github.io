@@ -11,6 +11,8 @@ Todo empezó cuando el profesor [Waissman](https://github.com/juliowaissman) nos
 para la clase de Redes Neuronales. Teníamos que usar [Tensorflow](https://www.tensorflow.org/) o algo similar. 
 Terminé eligiendo [keras](https://keras.io/)
 
+![keras+tensorflow](/img/posts/clasificador-redes-neuronales/keras-tensorflow-logo.jpg)
+
 Al principio todo iba bien, cada quien eligió un tema y yo termine eligiendo el de clasificador de células blancas. 
 Mi plan original era hacer una red que le dieras una imagen con células blancas en ella y te dijera cuántas había y de qué tipo. 
 Así que me puse a investigar proyectos que hubieran hecho algo similar y encontré los siguientes
@@ -57,7 +59,12 @@ intenté resolver el problema de 3 maneras diferentes:
     es decir, estamos obteniendo casi los mismos resultados clasificando con 5.
     
     El resultado se encuentra [aquí](https://github.com/Franko1307/Contador-de-celulas-blancas-con-redes-neuronales-convolucionals/blob/master/libretas/clasificador-modelo-avanzado.ipynb)
-        
+    
+    Y esta es la estructura de la red:
+    
+    ![red-estructura](/img/posts/clasificador-redes-neuronales/model.png)
+
+    
     
 ## Conclusión
 
