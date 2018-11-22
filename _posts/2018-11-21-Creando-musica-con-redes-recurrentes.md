@@ -116,8 +116,41 @@ def get_model(network_input, n_vocab, weights=None):
 
 En comparación al proyecto original el número de células fue reducido en cada capa.
 Se le añade una opción `weights` para permitir al modelo cargar pesos a la hora de compilarlo.
-Y se hizo un test con 3 diferentes optimizadores. A continuación se muestran los diferentes resultados
-optenidos:
+
+Se utilizó un `batch_size` de 16 y `25` epochs.
+
+Estos fueron los cambios que se hicieron a la hora de entrenar el modelo.
+
+Para generar el modelo, se le añadió una nueva característica y esta es la siguiente:
+
+
+```python
+# generate 500 notes
+    for note_index in range(500):
+        prediction_input = numpy.reshape(pattern, (1, len(pattern), 1))
+        prediction_input = prediction_input / float(n_vocab)
+
+        prediction = model.predict(prediction_input, verbose=0)
+
+        _max = sum(prediction[0])  # Hacemos una suma de todas las predicciones
+        selection_prbs = [val/_max for val in prediction[0]] # Sacamos un arreglo de probabilidad de ser seleccionado.
+        index = numpy.random.choice(len(prediction[0]), p=selection_prbs) # Agarramos una nota basándonos en su fitness.
+
+        result = int_to_note[index]
+        prediction_output.append(result)
+
+        pattern.append(index)
+        pattern = pattern[1:len(pattern)]
+
+    return prediction_output
+```
+
+En vez de elegir la mejor nota siempre, se le añade una ruleta basada en qué tan probable es la nota.
+Para añadirle un poco de aleatoriedad y que pueda arrojar resultados diferentes cada vez.
+
+Con estos cambios se realizaron 3 tests, cada uno con un optimizador diferente.
+
+A continuación se muestran los diferentes resultados optenidos:
 
 1.  sgd:
 
