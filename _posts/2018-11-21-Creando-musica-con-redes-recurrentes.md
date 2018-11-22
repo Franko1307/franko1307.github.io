@@ -164,4 +164,27 @@ A continuación se muestran los diferentes resultados optenidos:
 
 <center> <audio src="/extras/output_rmsprop.mp3" controls preload></audio> </center>
 
-El código de este último proyecto se encuentra disponible [aquí](https://github.com/Franko1307/Classical-Piano-Composer) 
+El código de este último proyecto se encuentra disponible [aquí](https://github.com/Franko1307/Classical-Piano-Composer)
+
+## Modelo empleado
+
+![red-estructura](/img/posts/creando-musica/model.png){: class="img-responsive" .center-image  }
+
+## Gráficas comparativas
+
+//TODO
+
+## Conclusión
+
+En cuanto al output, referenciando a los archivos de música me parece que el Adam y el RMSprop son los
+que mejores resultaron arrojaron. Incluso me pareció curioso que el Adam empezó con notas más bajas
+mientras que el RMSprop lo hizo con notas más altas. Siento que el resultado es descente considerando
+los pocos `epochs` que se utilizaron y el tamaño de la red.
+
+El primer proyecto en mi opinión es más intuitivo que el segundo, ya que maneja más claramente los archivos
+pero ambos son bastante claros y fáciles de implementar. Me gustó los resultados que dio cuando le añadí
+la característica de que en vez de que agarrara la mejor nota siempre, que lo hiciera basándose en
+las probabilidades. De esa manera le da un toque un poco más humano a la red en mi opinión.
+
+Me queda claro la utilidad que tienen las redes recurrentes y sin duda veo lo fácil que son de implementarse.
+Ya sea desde utilizando texto hasta utilizando sonido directamente. 
