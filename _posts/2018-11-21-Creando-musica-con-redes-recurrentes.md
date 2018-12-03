@@ -50,7 +50,6 @@ evidentemente `nf` hace referencia a `NoteOffEvent`. Y los 2 valores posteriores
 valores que se ilustran en `data`.
 
 ```python
-
 model = Sequential()
 model.add(LSTM(128, input_shape=(maxlen, len(unique_chunks))))
 model.add(Dense(len(unique_chunks))) # Número de caracteres únicos en nuestra cadena.
@@ -63,7 +62,6 @@ model.fit(X, y,
         batch_size=24,
         epochs=25
 )
-
 ```
 
 Ahora, a partir de ese texto se aplica la red recurrente, en nuestro caso utilizamos un modelo que utiliza
@@ -169,10 +167,6 @@ El código de este último proyecto se encuentra disponible [aquí](https://gith
 ## Modelo empleado
 
 ![red-estructura](/img/posts/creando-musica/model.png){: class="img-responsive" .center-image  }
-
-## Gráficas comparativas
-
-//TODO
 
 ## Conclusión
 
